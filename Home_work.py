@@ -66,7 +66,7 @@ print(round(shadoof_by_Kate, 1))
 print('Задача 6')
 
 n = str(123321)
-print("Yes" if sum(map(ord, n[:3])) == sum(map(ord, n[3:])) else "Yes")
+print('Yes' if sum(map(ord, n[:3])) == sum(map(ord, n[3:])) else 'Yes')
 
 '''
 Задача 8: Требуется определить, можно ли от шоколадки размером n x m
