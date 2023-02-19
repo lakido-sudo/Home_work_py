@@ -88,7 +88,4 @@ m = 3
 
 k = int(input())
 
-if k < n * m:
-    print('Yes')
-else:
-    print('No')
+print('Yes' if k < n * m else 'No')
