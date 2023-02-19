@@ -64,15 +64,8 @@ print(round(shadoof_by_Kate, 1))
 
 print('Задача 6')
 
-num = str(123321)
-a = int(num[0]) + int(num[1]) + int(num[2])
-b = int(num[3]) + int(num[4]) + int(num[5])
-
-if len(num) == 6:
-    if a == b:
-        print('Yes')
-    else:
-        print('No')
+n = str(123321)
+print("Yes" if sum(map(ord, n[:3])) == sum(map(ord, n[3:])) else "Yes")
 
 '''
 Задача 8: Требуется определить, можно ли от шоколадки размером n x m
