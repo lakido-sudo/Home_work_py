@@ -86,6 +86,6 @@ print('Задача 8')
 n = 2
 m = 3
 
-k = int(input())
+k = 7
 
-print('Yes' if k < n * m else 'No')
+print('Yes' if k <= n * m else 'No')
