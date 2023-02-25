@@ -23,7 +23,6 @@ word = input('Введите слово: ')
 def match(text, alphabet=set('a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z')):
     return not alphabet.isdisjoint(text.lower())
 
-
 if match(word) is True:
     def cost(symb):
         return [1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10][ord(symb.lower()) - ord('a')]
@@ -32,6 +31,6 @@ if match(word) is True:
 
 else:
     def cost(symb):
-        return [1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10][ord(symb.lower()) - ord('а')]
+        return [1, 3, 1, 3, 2, 1, 3, 5, 5, 1, 11, 2, 2, 2, 10, 5, 5, 1, 5, 10, 10, 4, 3, 8, 8, 10][ord(symb.lower()) - ord('а')]
 
     print('Стоимость:', sum(cost(y) for y in word))
