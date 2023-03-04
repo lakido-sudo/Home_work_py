@@ -34,5 +34,5 @@ else:
         elif b == 0:
             return a
         else:
-            return int(a) + int(b)
+            return a + b
     print(summa(a, b))
